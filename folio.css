@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    .wrapper{
+        width: 100%;
+
+    }
+    .img-banner{
+        display: none;
+
+    }
+
+    .img_info{
+width: 100%;
+
+
+    }
+    .img_info2 h2{
+        padding: 30px 30px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        line-height: 44px;
+
+    }
+    @media only screen and (min-width:786px){
+
+       .img-banner{
+        display: block; 
+        width: 100%;
+        padding-bottom: 30px;
+       }
+       /* .response{
+        max-width:70%;
+        height:auto;
+       } */
+       .wrapper{
+        width:600px;
+        margin: auto;
+
+       }
+       .img_info2{
+        padding: 20px 0px 0px;
+       }
+
+       .img_info{
+        padding: 20px 0px 0px;
+       }
+       
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          padding: 15%;
+        }
+      }
+      * {
+        box-sizing: border-box;
+        padding: 0.45%;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 350px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+     
+      @media screen and (max-width: 150px){
+
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 550px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+      }
+
+      @media screen and (max-width:350px) {
+
+        .column{
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 350px;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+      }
+
+      @media screen and (min-width:350px) and (max-width:550px) {
+
+        .column{
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 550px;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+      }
+      @media screen and (min-width:550px) and (max-width:950px) {
+
+        .column{
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 350px;
+        }
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+      }
+      .left, .right {
+        width: 25%;
+      }
+      
+      .middle {
+        width: 50%;
+      }
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: rgba(30, 8, 194, 0.582);
+        color: black;
+      }
+      
+      /* Add an active class to highlight the current page */
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+        display: none;
+      }
+
+      media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: rgb(44, 44, 145);
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: pink;
+  color: black;
+}
+
+@media screen  and (max-width: 370px) {
+  .header a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  .header {
+    overflow: hidden;
+    background-color: rgb(114, 180, 39);
+    padding: 20px 10px;
+  }
+  
+}
+
+@media screen  and (min-width: 768px) {
+  .header a:hover {
+    background-color: burlywood;
+    color: black;
+  }
+
+  @media screen {
+    
+  }
+  .header {
+    overflow: hidden;
+    background-color: rgb(96, 103, 110);
+    padding: 20px 10px;
+  }
+  
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: rgb(85, 136, 184);
+  color: RED;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: right;
+}
+.centered1 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: left;
+  width: 350px;
+  height: 350px;
+}
+
+.frame {
+  width: 100%;
+  height: 600px;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 365px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  .centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: right;
+    width: 90%;
+  }
+  .centered1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    width: 250px;
+    height: 250px;
+  }
+  .frame {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 365px) and (max-width: 768px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  .centered {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: right;
+    width: 90%;
+  }
+  .centered1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    width: 350px;
+    height: 350px;
+  }
+  .frame {
+    height: 700px;
+  }
+}
+
+
+.body1 {
+background-color: black;
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .body1 {
+    
+    background-color: rgb(143, 143, 143);
+    }
+
+  
+}
+/* ,,,,,,,,,,,,,,,,,,, */
+
+
+#slider {
+	overflow: hidden;
+  
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+ 
+	width:300%;
+	position: relative;
+	animation: 6s slider infinite;
+  padding: 15px;
+}
+
+#slider figure:hover {
+	/*animation-play-state: paused; enable for pause on hover*/
+  animation-play-state: paused;
+}
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+
+.textcolor {
+  color: #ddd;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .img {
+    width:900px;
+    height: 600px;
+  }
+
+
+}
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+.imageround {
+
+border-radius: 50%;
+
+}
+
+.textstyle {
+
+  font-family: monospace;
+}
+
+
+
+
+
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: rgb(0, 0, 0);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.logo{
+  height: 10vh;
+  width: 10vh;
+}
+
+
